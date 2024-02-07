@@ -128,9 +128,7 @@ h1 {
   height: 500px;
   top: 0px;
 }
-/* .navbar {
-  max-width: 1440px;
-} */
+
 .navs {
   display: flex !important;
 }
@@ -193,14 +191,4 @@ input[type="text"] {
     gap: 2rem;
     align-items: start !important;
   }
-}
-
-@media only screen and (max-width: 900px) {
-  /* #navbar .navs {
-    display: none;
-  }
-
-  #navbar .menu-icon {
-    display: block;
-  } */
 }
