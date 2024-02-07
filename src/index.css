@@ -1,0 +1,206 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#root {
+  font-family: "Gilroy Medium", Arial, Inter, system-ui, Avenir, Helvetica,
+    sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+  --primary-color: #49ad09;
+  --surface-100: #f2f2f2;
+  --surface-200: #ededed;
+}
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("/gilroy-medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  object-fit: cover;
+}
+a {
+  color: #000;
+  width: 8rem;
+  height: 3rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.img1 {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  z-index: 3;
+}
+
+.img2 {
+  position: absolute;
+  top: 195px;
+  right: -15px;
+  z-index: 3;
+}
+
+.img3 {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  z-index: 3;
+}
+.divImg1,
+.divImg2 {
+  position: absolute;
+  z-index: 0;
+  width: 150px;
+  height: 300px;
+  background-color: var(--surface-100);
+}
+.divImg1 {
+  right: -2px;
+  bottom: -2px;
+}
+.divImg2 {
+  top: -2px;
+  left: -2px;
+}
+.img4 {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  z-index: 3;
+}
+
+.img5 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 3;
+}
+
+.img6 {
+  position: absolute;
+  bottom: -20px;
+  right: -25px;
+  z-index: 3;
+}
+.card:hover,
+.gButton,
+.testiCard {
+  cursor: pointer;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.08),
+    0px 30px 20px rgba(0, 0, 0, 0.06), 0px 45px 30px rgba(0, 0, 0, 0.04);
+}
+.gButton {
+  cursor: pointer;
+}
+
+.pCards > :nth-child(2),
+.pCards > :nth-child(4) {
+  margin-top: 80px;
+}
+.decoDiv {
+  height: 500px;
+  top: 0px;
+}
+/* .navbar {
+  max-width: 1440px;
+} */
+.navs {
+  display: flex !important;
+}
+
+.menu-icon {
+  display: none;
+}
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+input[type="text"] {
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 1200px) {
+  #root {
+    font-size: 14px;
+  }
+  .pDiv {
+    flex-direction: column;
+  }
+  .navs {
+    display: none !important;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .pCards {
+    flex-direction: column;
+  }
+
+  .pCards > :nth-child(1),
+  .pCards > :nth-child(2),
+  .pCards > :nth-child(3),
+  .pCards > :nth-child(4) {
+    margin-top: 20px;
+  }
+
+  .pCard {
+    width: 350px !important;
+  }
+  .priceCards {
+    flex-direction: column;
+  }
+  .f-infos {
+    padding-left: 18%;
+    width: 60% !important;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* #navbar .navs {
+    display: none;
+  }
+
+  #navbar .menu-icon {
+    display: block;
+  } */
+}
